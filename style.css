@@ -61,7 +61,7 @@ ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  background-color: rgb(216, 139, 116);
+  background-color: rgb(242, 255, 230);
 }
 
 section {
@@ -220,7 +220,7 @@ footer {
   }
 
   li {
-    background-color: rgb(66, 90, 79);
+    background-color: rgb(242, 255, 230);
     font-size: 3em;
   }
 
