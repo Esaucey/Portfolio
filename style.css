@@ -34,7 +34,7 @@ h4 {
 }
 
 header {
-  padding: 20px 60px 20px 60px;
+  padding: 20px 0px 0px 0px;
   background-color: rgb(120, 189, 168);
   font-size: 2em;
   box-shadow: 0px 2px 5px rgb(109, 109, 109);
@@ -42,16 +42,26 @@ header {
   font-weight: bold;
 }
 
+.title {
+  font-size: 20px;
+}
+
 nav {
   margin: auto;
+  padding: 0;
+}
+
+nav a.icon {
+  display: none;
 }
 
 ul {
   margin: 0;
-  padding: 0;
+  padding: 20px;
   display: flex;
   justify-content: space-evenly;
   list-style: none;
+  background-color: rgb(216, 139, 116);
 }
 
 section {
@@ -66,10 +76,14 @@ section {
   border-top-left-radius: 50%;
   border-width: 7px;
   border-style: none;
+  box-shadow: 0px 2px 5px rgb(109, 109, 109);
 }
 
 #profile-content {
   margin: 0 20% 2% 20%;
+  padding: 15px;
+  border-top-left-radius: 140px;
+  background-color: cornsilk;
   display: flex;
   justify-content: center;
   flex-shrink: 3;
@@ -109,12 +123,16 @@ img {
   transition: opacity 0.3s;
 }
 
+.overlay p {
+  margin: 0;
+}
+
 .overlay:hover {
   opacity: 90%;
 }
 
 .workName {
-  margin-top: 25%;
+  margin-top: 30%;
   color: rgb(255, 255, 255);
   font-style: normal;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -156,12 +174,54 @@ footer {
 @media only screen and (max-device-width: 768px) {
   header {
     font-size: 20px;
-    padding: 10px;
+    margin: 0;
+    padding: 0px;
   }
   
+  .title h1{
+    margin: 0;
+    padding: 20px;
+    text-align: left;
+  }
+
+  nav {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  nav #navLinks {
+    display: none;
+  }
+  
+  nav a {
+    color: rgb(177, 121, 182);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+  }
+
+  nav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  nav a:hover {
+    color: black;
+  }
+
   ul {
+    margin: 0;
+    padding: 0;
     display: block;
     text-align: right;
+  }
+
+  li {
+    background-color: rgb(66, 90, 79);
+    font-size: 3em;
   }
 
   h1 {
@@ -169,6 +229,7 @@ footer {
   }
    
   #profile-content {
+    border-top-right-radius: 140px;
     margin: 0 10% 5% 10%;
     display: block;
     text-align: center;
@@ -191,10 +252,4 @@ footer {
     position: relative;
     width: 100%;
   }
-
-  .triangle {
-    border-top: 110px solid rgb(130, 156, 212);
-    border-right: 110px solid transparent;
-  }
-
 }
