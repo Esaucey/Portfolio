@@ -95,6 +95,7 @@ section {
 }
 
 .thumbnail {
+  margin-bottom: 3em;
   position: relative;
   width: 27%;
 }
@@ -147,6 +148,7 @@ footer {
 #work-sec {
   margin: 0 20px 10px 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -182,6 +184,7 @@ footer {
     margin: 0;
     padding: 20px;
     text-align: left;
+    font-size: 3em;
   }
 
   nav {
@@ -197,7 +200,7 @@ footer {
     color: rgb(177, 121, 182);
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1em;
     display: block;
   }
 
@@ -206,6 +209,7 @@ footer {
     position: absolute;
     right: 0;
     top: 0;
+    font-size: 3em;
   }
   
   nav a:hover {
